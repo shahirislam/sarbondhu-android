@@ -1,0 +1,351 @@
+{
+  "weather": {
+    "location": "ঢাকা",
+    "rainProbability": 20
+  },
+  "admins": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "name": "প্রধান অ্যাডমিন"
+    }
+  ],
+  "fertilizers": [
+    {
+      "id": 1,
+      "name": "ইউরিয়া",
+      "category": "নাইট্রোজেন জাতীয় সার",
+      "npkRatio": "৪৬-০-০",
+      "description": "উচ্চ নাইট্রোজেনযুক্ত সার। বাংলাদেশে ধান চাষে সবচেয়ে বেশি ব্যবহৃত হয়। গাছের পাতা সবুজ ও সতেজ রাখে।",
+      "usage": "প্রতি হেক্টরে ২৫০-৩০০ কেজি কয়েক কিস্তিতে প্রয়োগ করুন। কুশি গজানো ও থোড় আসার সময় প্রয়োগ সবচেয়ে কার্যকর।",
+      "recommendedCrops": ["ধান", "গম", "ভুট্টা", "পাট", "আখ"],
+      "unitPrice": 27.0,
+      "unit": "কেজি"
+    },
+    {
+      "id": 2,
+      "name": "টিএসপি (ট্রিপল সুপার ফসফেট)",
+      "category": "ফসফরাস জাতীয় সার",
+      "npkRatio": "০-৪৬-০",
+      "description": "ফসফরাসের ঘন উৎস। শিকড়ের বৃদ্ধি ঘটায় এবং ফলন বাড়ায়।",
+      "usage": "প্রতি হেক্টরে ১৫০-২০০ কেজি চারা রোপণের আগে জমি তৈরির সময় মূল সার হিসেবে প্রয়োগ করুন।",
+      "recommendedCrops": ["ধান", "গম", "আলু", "সরিষা", "সবজি"],
+      "unitPrice": 27.0,
+      "unit": "কেজি"
+    },
+    {
+      "id": 3,
+      "name": "এমওপি (মিউরিয়েট অব পটাশ)",
+      "category": "পটাশ জাতীয় সার",
+      "npkRatio": "০-০-৬০",
+      "description": "পটাশিয়ামের প্রধান উৎস। ফসলের মান উন্নত করে ও রোগ প্রতিরোধ ক্ষমতা বাড়ায়।",
+      "usage": "প্রতি হেক্টরে ৮০-১০০ কেজি প্রয়োগ করুন। বেলে মাটিতে দুই কিস্তিতে প্রয়োগ করা ভালো।",
+      "recommendedCrops": ["ধান", "আলু", "কলা", "আখ", "তামাক"],
+      "unitPrice": 20.0,
+      "unit": "কেজি"
+    },
+    {
+      "id": 4,
+      "name": "ডিএপি (ডাই-অ্যামোনিয়াম ফসফেট)",
+      "category": "মিশ্র সার",
+      "npkRatio": "১৮-৪৬-০",
+      "description": "নাইট্রোজেন ও ফসফরাস দুটোই সরবরাহ করে এমন ঘন মিশ্র সার।",
+      "usage": "প্রতি হেক্টরে ১০০-১৫০ কেজি বীজ বপনের আগে মূল সার হিসেবে প্রয়োগ করুন।",
+      "recommendedCrops": ["গম", "ভুট্টা", "সরিষা", "সবজি", "তুলা"],
+      "unitPrice": 21.0,
+      "unit": "কেজি"
+    },
+    {
+      "id": 5,
+      "name": "জিংক সালফেট",
+      "category": "অণুপুষ্টি সার",
+      "npkRatio": "জিংক ২১%",
+      "description": "মাটির দস্তার অভাব পূরণ করে। ধান চাষে বিশেষভাবে প্রয়োজনীয়।",
+      "usage": "প্রতি হেক্টরে ২০-২৫ কেজি প্রয়োগ করুন। ০.৫% দ্রবণ পাতায় স্প্রে করেও ব্যবহার করা যায়।",
+      "recommendedCrops": ["ধান", "গম", "ভুট্টা", "আলু"],
+      "unitPrice": 150.0,
+      "unit": "কেজি"
+    },
+    {
+      "id": 6,
+      "name": "জিপসাম (ক্যালসিয়াম সালফেট)",
+      "category": "অন্যান্য",
+      "npkRatio": "ক্যালসিয়াম ২২%, সালফার ১৮%",
+      "description": "ক্যালসিয়াম ও সালফার সরবরাহ করে। মাটির গঠন উন্নত করে ও চিনাবাদামের ফলন বাড়ায়।",
+      "usage": "প্রতি হেক্টরে ২০০-২৫০ কেজি জমি তৈরির সময় প্রয়োগ করুন।",
+      "recommendedCrops": ["চিনাবাদাম", "সরিষা", "পেঁয়াজ", "রসুন", "সবজি"],
+      "unitPrice": 15.0,
+      "unit": "কেজি"
+    },
+    {
+      "id": 7,
+      "name": "বোরিক এসিড",
+      "category": "অণুপুষ্টি সার",
+      "npkRatio": "বোরন ১৭%",
+      "description": "বোরনের অভাব পূরণ করে। ফুল ও ফল ঝরে পড়া রোধ করে।",
+      "usage": "প্রতি হেক্টরে ১০-১২ কেজি জমি তৈরির সময় প্রয়োগ করুন। অতিরিক্ত প্রয়োগ ক্ষতিকর।",
+      "recommendedCrops": ["সরিষা", "গম", "ফুলকপি", "বাঁধাকপি"],
+      "unitPrice": 250.0,
+      "unit": "কেজি"
+    },
+    {
+      "id": 8,
+      "name": "জৈব সার (ভার্মিকম্পোস্ট)",
+      "category": "জৈব সার",
+      "npkRatio": "প্রাকৃতিক জৈব উপাদান",
+      "description": "কেঁচো দিয়ে তৈরি জৈব সার। মাটির উর্বরতা ও পানি ধারণ ক্ষমতা বাড়ায়।",
+      "usage": "প্রতি হেক্টরে ২-৩ টন জমি তৈরির সময় মাটির সাথে মিশিয়ে দিন।",
+      "recommendedCrops": ["সবজি", "ফল", "ধান", "ফুল"],
+      "unitPrice": 15.0,
+      "unit": "কেজি"
+    }
+  ],
+  "shops": [
+    {
+      "id": 1,
+      "shopName": "মেসার্স রহমান ট্রেডার্স",
+      "ownerName": "মো. আব্দুর রহমান",
+      "phone": "01711234567",
+      "district": "বগুড়া",
+      "upazila": "শেরপুর",
+      "address": "বাসস্ট্যান্ড মোড়, শেরপুর",
+      "username": "dealer1",
+      "password": "dealer123",
+      "active": true
+    },
+    {
+      "id": 2,
+      "shopName": "কৃষক বন্ধু সার ঘর",
+      "ownerName": "মো. কামাল হোসেন",
+      "phone": "01812345678",
+      "district": "রাজশাহী",
+      "upazila": "পবা",
+      "address": "নওহাটা বাজার, পবা",
+      "username": "dealer2",
+      "password": "dealer123",
+      "active": true
+    },
+    {
+      "id": 3,
+      "shopName": "মেসার্স আল-আমিন এন্টারপ্রাইজ",
+      "ownerName": "আল-আমিন মিয়া",
+      "phone": "01913456789",
+      "district": "ময়মনসিংহ",
+      "upazila": "ত্রিশাল",
+      "address": "কলেজ রোড, ত্রিশাল",
+      "username": "dealer3",
+      "password": "dealer123",
+      "active": true
+    },
+    {
+      "id": 4,
+      "shopName": "সবুজ বাংলা কৃষি বিতান",
+      "ownerName": "শাহানা বেগম",
+      "phone": "01614567890",
+      "district": "রংপুর",
+      "upazila": "মিঠাপুকুর",
+      "address": "শঠিবাড়ী বাজার, মিঠাপুকুর",
+      "username": "dealer4",
+      "password": "dealer123",
+      "active": true
+    },
+    {
+      "id": 5,
+      "shopName": "মেসার্স মিতালী ট্রেডার্স",
+      "ownerName": "মো. শফিকুল ইসলাম",
+      "phone": "01515678901",
+      "district": "যশোর",
+      "upazila": "ঝিকরগাছা",
+      "address": "বাজার রোড, ঝিকরগাছা",
+      "username": "dealer5",
+      "password": "dealer123",
+      "active": true
+    },
+    {
+      "id": 6,
+      "shopName": "ভাই ভাই সার ও বীজ ভান্ডার",
+      "ownerName": "মো. জসিম উদ্দিন",
+      "phone": "01716789012",
+      "district": "কুমিল্লা",
+      "upazila": "চান্দিনা",
+      "address": "পুরাতন বাজার, চান্দিনা",
+      "username": "dealer6",
+      "password": "dealer123",
+      "active": true
+    }
+  ],
+  "stocks": [
+    { "shopId": 1, "fertilizerId": 1, "quantity": 500.0, "sellingPrice": 27.0 },
+    { "shopId": 1, "fertilizerId": 2, "quantity": 200.0, "sellingPrice": 27.0 },
+    { "shopId": 1, "fertilizerId": 3, "quantity": 150.0, "sellingPrice": 20.0 },
+    { "shopId": 1, "fertilizerId": 4, "quantity": 0.0, "sellingPrice": 21.0 },
+    { "shopId": 1, "fertilizerId": 5, "quantity": 20.0, "sellingPrice": 155.0 },
+    { "shopId": 2, "fertilizerId": 1, "quantity": 750.0, "sellingPrice": 27.0 },
+    { "shopId": 2, "fertilizerId": 2, "quantity": 0.0, "sellingPrice": 27.0 },
+    { "shopId": 2, "fertilizerId": 3, "quantity": 300.0, "sellingPrice": 20.0 },
+    { "shopId": 2, "fertilizerId": 6, "quantity": 400.0, "sellingPrice": 15.0 },
+    { "shopId": 2, "fertilizerId": 7, "quantity": 5.0, "sellingPrice": 260.0 },
+    { "shopId": 3, "fertilizerId": 1, "quantity": 320.0, "sellingPrice": 28.0 },
+    { "shopId": 3, "fertilizerId": 4, "quantity": 180.0, "sellingPrice": 22.0 },
+    { "shopId": 3, "fertilizerId": 5, "quantity": 0.0, "sellingPrice": 150.0 },
+    { "shopId": 4, "fertilizerId": 1, "quantity": 0.0, "sellingPrice": 27.0 },
+    { "shopId": 4, "fertilizerId": 2, "quantity": 260.0, "sellingPrice": 27.0 },
+    { "shopId": 4, "fertilizerId": 3, "quantity": 90.0, "sellingPrice": 21.0 },
+    { "shopId": 4, "fertilizerId": 6, "quantity": 120.0, "sellingPrice": 16.0 },
+    { "shopId": 5, "fertilizerId": 1, "quantity": 640.0, "sellingPrice": 27.0 },
+    { "shopId": 5, "fertilizerId": 4, "quantity": 90.0, "sellingPrice": 21.0 },
+    { "shopId": 5, "fertilizerId": 5, "quantity": 35.0, "sellingPrice": 150.0 },
+    { "shopId": 5, "fertilizerId": 7, "quantity": 0.0, "sellingPrice": 250.0 },
+    { "shopId": 6, "fertilizerId": 2, "quantity": 150.0, "sellingPrice": 28.0 },
+    { "shopId": 6, "fertilizerId": 3, "quantity": 210.0, "sellingPrice": 20.0 },
+    { "shopId": 6, "fertilizerId": 6, "quantity": 0.0, "sellingPrice": 15.0 }
+  ],
+  "sales": [
+    {
+      "id": 1,
+      "invoiceNo": "SB-0001",
+      "shopId": 1,
+      "customerName": "আবদুল করিম",
+      "customerPhone": "01711000001",
+      "minutesAgo": 95,
+      "items": [
+        { "fertilizerId": 1, "quantity": 50.0, "unitPrice": 27.0 },
+        { "fertilizerId": 2, "quantity": 20.0, "unitPrice": 27.0 }
+      ]
+    },
+    {
+      "id": 2,
+      "invoiceNo": "SB-0002",
+      "shopId": 1,
+      "customerName": "রফিকুল ইসলাম",
+      "customerPhone": "",
+      "minutesAgo": 40,
+      "items": [
+        { "fertilizerId": 3, "quantity": 25.0, "unitPrice": 20.0 }
+      ]
+    },
+    {
+      "id": 3,
+      "invoiceNo": "SB-0003",
+      "shopId": 1,
+      "customerName": "জাহানারা বেগম",
+      "customerPhone": "01811000002",
+      "daysAgo": 3,
+      "time": "10:05",
+      "items": [
+        { "fertilizerId": 1, "quantity": 100.0, "unitPrice": 27.0 }
+      ]
+    },
+    {
+      "id": 4,
+      "invoiceNo": "SB-0004",
+      "shopId": 1,
+      "customerName": "",
+      "customerPhone": "",
+      "daysAgo": 12,
+      "time": "16:20",
+      "items": [
+        { "fertilizerId": 5, "quantity": 5.0, "unitPrice": 155.0 },
+        { "fertilizerId": 1, "quantity": 40.0, "unitPrice": 27.0 }
+      ]
+    },
+    {
+      "id": 5,
+      "invoiceNo": "SB-0005",
+      "shopId": 1,
+      "customerName": "মোতালেব হোসেন",
+      "customerPhone": "",
+      "daysAgo": 35,
+      "time": "11:00",
+      "items": [
+        { "fertilizerId": 2, "quantity": 30.0, "unitPrice": 27.0 }
+      ]
+    },
+    {
+      "id": 6,
+      "invoiceNo": "SB-0006",
+      "shopId": 2,
+      "customerName": "সাইফুল ইসলাম",
+      "customerPhone": "01911000003",
+      "minutesAgo": 150,
+      "items": [
+        { "fertilizerId": 1, "quantity": 80.0, "unitPrice": 27.0 },
+        { "fertilizerId": 6, "quantity": 40.0, "unitPrice": 15.0 }
+      ]
+    },
+    {
+      "id": 7,
+      "invoiceNo": "SB-0007",
+      "shopId": 2,
+      "customerName": "",
+      "customerPhone": "",
+      "daysAgo": 6,
+      "time": "14:10",
+      "items": [
+        { "fertilizerId": 3, "quantity": 60.0, "unitPrice": 20.0 }
+      ]
+    },
+    {
+      "id": 8,
+      "invoiceNo": "SB-0008",
+      "shopId": 3,
+      "customerName": "নুরুল আমিন",
+      "customerPhone": "",
+      "daysAgo": 1,
+      "time": "09:45",
+      "items": [
+        { "fertilizerId": 1, "quantity": 30.0, "unitPrice": 28.0 },
+        { "fertilizerId": 4, "quantity": 20.0, "unitPrice": 22.0 }
+      ]
+    },
+    {
+      "id": 9,
+      "invoiceNo": "SB-0009",
+      "shopId": 4,
+      "customerName": "আমেনা খাতুন",
+      "customerPhone": "01611000004",
+      "minutesAgo": 20,
+      "items": [
+        { "fertilizerId": 2, "quantity": 25.0, "unitPrice": 27.0 }
+      ]
+    },
+    {
+      "id": 10,
+      "invoiceNo": "SB-0010",
+      "shopId": 5,
+      "customerName": "হাবিবুর রহমান",
+      "customerPhone": "",
+      "daysAgo": 2,
+      "time": "11:15",
+      "items": [
+        { "fertilizerId": 1, "quantity": 120.0, "unitPrice": 27.0 },
+        { "fertilizerId": 5, "quantity": 10.0, "unitPrice": 150.0 }
+      ]
+    },
+    {
+      "id": 11,
+      "invoiceNo": "SB-0011",
+      "shopId": 5,
+      "customerName": "",
+      "customerPhone": "",
+      "daysAgo": 40,
+      "time": "13:00",
+      "items": [
+        { "fertilizerId": 4, "quantity": 30.0, "unitPrice": 21.0 }
+      ]
+    },
+    {
+      "id": 12,
+      "invoiceNo": "SB-0012",
+      "shopId": 6,
+      "customerName": "মিজানুর রহমান",
+      "customerPhone": "01511000005",
+      "minutesAgo": 240,
+      "items": [
+        { "fertilizerId": 3, "quantity": 40.0, "unitPrice": 20.0 },
+        { "fertilizerId": 2, "quantity": 15.0, "unitPrice": 28.0 }
+      ]
+    }
+  ]
+}

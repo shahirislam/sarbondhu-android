@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">সার বন্ধু</string>
+
+    <string name="splash_title">সার বন্ধু</string>
+    <string name="splash_tagline">সার খুজুন নির্বিঘ্নে, যেকোনো সময়, যেকোনো যায়গায়</string>
+
+    <string-array name="home_slogans">
+        <item>আপনার কৃষিকাজের প্রয়োজনের জন্য সেরা সার পান</item>
+        <item>স্থানীয় দোকানগুলির সাথে সংযুক্ত হন</item>
+        <item>আপনার ফসলের সেরা সার সন্ধান করুন</item>
+    </string-array>
+    <string name="rain_probability">বৃষ্টির সম্ভাবনা: %1$s%%</string>
+
+    <string name="empty_fertilizers">কোনো সার পাওয়া যায়নি</string>
+    <string name="error_load_data">তথ্য লোড করা যায়নি।</string>
+    <string name="error_not_found">এই সারের তথ্য পাওয়া যায়নি।</string>
+    <string name="retry">আবার চেষ্টা করুন</string>
+
+    <string name="category">ধরন: %1$s</string>
+    <string name="npk_ratio">এনপিকে অনুপাত: %1$s</string>
+    <string name="fixed_price">নির্ধারিত মূল্য: ৳%1$s / %2$s</string>
+    <string name="section_details">বিস্তারিত</string>
+    <string name="section_usage">প্রয়োগ পদ্ধতি</string>
+    <string name="section_crops">উপযোগী ফসল</string>
+    <string name="section_shops">দোকানসমূহ</string>
+    <string name="no_shops">কোনো দোকানে এই সার পাওয়া যায়নি</string>
+
+    <string name="location">%1$s, %2$s</string>
+    <string name="shop_price">দাম: ৳%1$s / %2$s</string>
+    <string name="stock_quantity">মজুদ: %1$s %2$s</string>
+    <string name="stock_out">স্টক নেই</string>
+    <string name="call_shop">%1$s-কে কল করুন</string>
+    <string name="fertilizer_image">সারের ছবি</string>
+    <string name="owner_photo">মালিকের ছবি</string>
+
+    <!-- Login -->
+    <string name="login">লগইন</string>
+    <string name="login_title">সার বন্ধু লগইন</string>
+    <string name="role_dealer">ডিলার</string>
+    <string name="role_admin">অ্যাডমিন</string>
+    <string name="username">ইউজারনেম</string>
+    <string name="password">পাসওয়ার্ড</string>
+    <string name="login_demo_hint">ডেমো অ্যাকাউন্ট — অ্যাডমিন: admin / admin123, ডিলার: dealer1 / dealer123</string>
+    <string name="error_fields_required">ইউজারনেম ও পাসওয়ার্ড দিন</string>
+    <string name="error_wrong_credentials">ইউজারনেম বা পাসওয়ার্ড ভুল</string>
+    <string name="error_dealer_inactive">এই ডিলার অ্যাকাউন্টটি নিষ্ক্রিয়। অ্যাডমিনের সাথে যোগাযোগ করুন।</string>
+
+    <!-- Admin shell -->
+    <string name="logout">লগআউট</string>
+    <string name="nav_dashboard">ড্যাশবোর্ড</string>
+    <string name="nav_fertilizers">সার</string>
+    <string name="nav_dealers">ডিলার</string>
+    <string name="nav_stock">মজুদ</string>
+
+    <!-- Dashboard -->
+    <string name="stat_fertilizers">মোট সার</string>
+    <string name="stat_active_dealers">সক্রিয় ডিলার</string>
+    <string name="stat_total_stock">মোট মজুদ (কেজি)</string>
+    <string name="stat_low_stock">কম মজুদ</string>
+    <string name="section_low_stock">কম মজুদের তালিকা</string>
+    <string name="section_recent_activity">সাম্প্রতিক কার্যক্রম</string>
+    <string name="no_low_stock">সব দোকানে পর্যাপ্ত মজুদ আছে</string>
+    <string name="no_activity">এই সেশনে এখনো কোনো পরিবর্তন হয়নি</string>
+    <string name="low_stock_row">%1$s – %2$s %3$s</string>
+
+    <!-- Fertilizer management -->
+    <string name="add_fertilizer">নতুন সার</string>
+    <string name="edit_fertilizer">সার সম্পাদনা</string>
+    <string name="field_name">নাম</string>
+    <string name="field_category">ধরন</string>
+    <string name="field_npk">এনপিকে অনুপাত / উপাদান</string>
+    <string name="field_price">নির্ধারিত মূল্য (৳)</string>
+    <string name="field_unit">একক</string>
+    <string name="field_description">বিবরণ</string>
+    <string name="field_usage">প্রয়োগ পদ্ধতি</string>
+    <string name="field_crops">উপযোগী ফসল (কমা দিয়ে আলাদা করুন)</string>
+    <string name="default_unit">কেজি</string>
+    <string name="save">সংরক্ষণ করুন</string>
+    <string name="delete">মুছে ফেলুন</string>
+    <string name="cancel">বাতিল</string>
+    <string name="confirm_delete_fertilizer">"%1$s" মুছে ফেলবেন? সব দোকানের এই সারের মজুদও মুছে যাবে।</string>
+    <string name="saved">সংরক্ষিত হয়েছে</string>
+    <string name="deleted">মুছে ফেলা হয়েছে</string>
+    <string name="error_required">এই ঘরটি পূরণ করুন</string>
+    <string name="error_invalid_number">সঠিক সংখ্যা লিখুন (০ বা বেশি)</string>
+    <string name="error_not_found_item">তথ্যটি আর পাওয়া যাচ্ছে না</string>
+    <string name="fertilizer_row_subtitle">%1$s · ৳%2$s / %3$s</string>
+
+    <!-- Dealer management -->
+    <string name="add_dealer">নতুন ডিলার</string>
+    <string name="edit_dealer">ডিলার সম্পাদনা</string>
+    <string name="field_shop_name">দোকানের নাম</string>
+    <string name="field_owner_name">মালিকের নাম</string>
+    <string name="field_phone">ফোন নম্বর</string>
+    <string name="field_district">জেলা</string>
+    <string name="field_upazila">উপজেলা</string>
+    <string name="field_address">ঠিকানা</string>
+    <string name="field_active">সক্রিয় (লগইন ও কৃষকদের তালিকায় দেখাবে)</string>
+    <string name="reset_password">পাসওয়ার্ড রিসেট</string>
+    <string name="new_password">নতুন পাসওয়ার্ড</string>
+    <string name="password_reset_done">পাসওয়ার্ড পরিবর্তন হয়েছে</string>
+    <string name="error_username_taken">এই ইউজারনেমটি আগে থেকেই আছে</string>
+    <string name="error_password_short">পাসওয়ার্ড কমপক্ষে ৬ অক্ষরের হতে হবে</string>
+    <string name="dealer_active">সক্রিয়</string>
+    <string name="dealer_inactive">নিষ্ক্রিয়</string>
+    <string name="dealer_row_subtitle">%1$s · %2$s</string>
+
+    <!-- Stock management -->
+    <string name="choose_dealer">ডিলার বাছাই করুন</string>
+    <string name="set_stock">সেট</string>
+    <string name="adjust_stock">যোগ/বিয়োগ</string>
+    <string name="set_stock_title">মজুদ সেট — %1$s</string>
+    <string name="adjust_stock_title">মজুদ যোগ/বিয়োগ — %1$s</string>
+    <string name="field_quantity">পরিমাণ (%1$s)</string>
+    <string name="field_selling_price">বিক্রয় মূল্য (৳)</string>
+    <string name="stock_add">যোগ</string>
+    <string name="stock_subtract">বিয়োগ</string>
+    <string name="current_stock">বর্তমান মজুদ: %1$s %2$s</string>
+    <string name="no_stock_row">এখনো মজুদ দেওয়া হয়নি</string>
+    <string name="error_negative_stock">মজুদ শূন্যের নিচে যেতে পারে না</string>
+    <string name="stock_updated">মজুদ হালনাগাদ হয়েছে</string>
+
+    <!-- Dealer side -->
+    <string name="error_insufficient_stock">পর্যাপ্ত মজুদ নেই</string>
+    <string name="error_empty_cart">কার্টে অন্তত একটি সার যোগ করুন</string>
+    <string name="error_wrong_current_password">বর্তমান পাসওয়ার্ড ভুল</string>
+
+    <string name="nav_new_sale">নতুন বিক্রয়</string>
+    <string name="nav_history">ইতিহাস</string>
+    <string name="nav_profile">প্রোফাইল</string>
+
+    <string name="stat_today_sales">আজকের বিক্রয়</string>
+    <string name="stat_today_revenue">আজকের আয় (৳)</string>
+    <string name="stat_month_sales">এই মাসের বিক্রয়</string>
+    <string name="stat_month_revenue">এই মাসের আয় (৳)</string>
+    <string name="section_my_stock">আমার মজুদ</string>
+    <string name="section_recent_sales">সাম্প্রতিক বিক্রয়</string>
+    <string name="no_stock_yet">এখনো কোনো মজুদ নেই। অ্যাডমিনের সাথে যোগাযোগ করুন।</string>
+    <string name="no_sales_yet">এখনো কোনো বিক্রয় হয়নি</string>
+    <string name="walk_in_customer">সাধারণ ক্রেতা</string>
+    <string name="sale_row_subtitle">%1$s · %2$s</string>
+    <string name="money">৳%1$s</string>
+
+    <string name="section_available">বিক্রয়যোগ্য সার</string>
+    <string name="section_cart">কার্ট</string>
+    <string name="available_row_subtitle">মজুদ: %1$s %2$s · ৳%3$s / %2$s</string>
+    <string name="cart_empty">কার্ট খালি। উপরের তালিকা থেকে সার বাছাই করুন।</string>
+    <string name="cart_row_subtitle">%1$s %2$s × ৳%3$s</string>
+    <string name="cart_total">মোট: ৳%1$s</string>
+    <string name="customer_name">ক্রেতার নাম (ঐচ্ছিক)</string>
+    <string name="customer_phone">ক্রেতার ফোন (ঐচ্ছিক)</string>
+    <string name="complete_sale">বিক্রয় সম্পন্ন করুন</string>
+    <string name="add_to_cart">কার্টে যোগ করুন</string>
+    <string name="add_to_cart_title">কার্টে যোগ — %1$s</string>
+    <string name="available_quantity">মজুদ আছে: %1$s %2$s</string>
+    <string name="remove_from_cart">কার্ট থেকে সরাবেন?</string>
+    <string name="remove">সরান</string>
+    <string name="sale_done_title">বিক্রয় সম্পন্ন</string>
+    <string name="ok">ঠিক আছে</string>
+    <string name="view_invoice">ইনভয়েস দেখুন</string>
+    <string name="error_quantity_positive">০-এর বেশি পরিমাণ লিখুন</string>
+    <string name="error_more_than_stock">মজুদের চেয়ে বেশি বিক্রি করা যাবে না</string>
+    <string name="error_sale_in_progress">বিক্রয় সম্পন্ন হচ্ছে, একটু অপেক্ষা করুন</string>
+    <string name="no_sellable_stock">বিক্রয়ের জন্য কোনো মজুদ নেই</string>
+
+    <string name="search_sales">ইনভয়েস, ক্রেতা বা সার দিয়ে খুঁজুন</string>
+    <string name="history_summary">%1$sটি বিক্রয় · মোট ৳%2$s</string>
+    <string name="invoice_title">ইনভয়েস %1$s</string>
+    <string name="invoice_customer">ক্রেতা: %1$s</string>
+    <string name="invoice_phone">ফোন: %1$s</string>
+    <string name="invoice_date">তারিখ: %1$s</string>
+    <string name="invoice_line">%1$s — %2$s %3$s × ৳%4$s = ৳%5$s</string>
+    <string name="invoice_total">মোট: ৳%1$s</string>
+
+    <string name="section_shop_details">দোকানের তথ্য</string>
+    <string name="section_change_password">পাসওয়ার্ড পরিবর্তন</string>
+    <string name="current_password">বর্তমান পাসওয়ার্ড</string>
+    <string name="confirm_password">নতুন পাসওয়ার্ড আবার লিখুন</string>
+    <string name="error_password_mismatch">দুটি পাসওয়ার্ড মিলছে না</string>
+    <string name="change_password">পাসওয়ার্ড পরিবর্তন করুন</string>
+    <string name="profile_line">%1$s: %2$s</string>
+</resources>

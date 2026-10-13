@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    app:cardBackgroundColor="@color/surface_container_low"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="1dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingVertical="12dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="4dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:background="@drawable/bg_image_placeholder"
+            android:contentDescription="@string/owner_photo"
+            android:padding="8dp"
+            android:src="@drawable/ic_person" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shop_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/on_surface"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/on_surface_variant"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/on_surface_variant"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/selling_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/on_surface_variant"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stock_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_badge"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/call_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_call" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

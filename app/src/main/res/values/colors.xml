@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 3 baseline palette, as rendered by the Flutter app's default theme -->
+    <color name="primary">#65558F</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#E9DDFF</color>
+    <color name="on_primary_container">#21005D</color>
+    <color name="surface">#FEF7FF</color>
+    <color name="surface_container_low">#F7F2FA</color>
+    <color name="surface_container">#F3EDF7</color>
+    <color name="on_surface">#1D1B20</color>
+    <color name="on_surface_variant">#49454F</color>
+    <color name="card_stroke">#E7E0EC</color>
+
+    <!-- Weather card gradient (Flutter Colors.blue.shade400 → shade200) -->
+    <color name="weather_start">#42A5F5</color>
+    <color name="weather_end">#90CAF9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+
+    <!-- Stock badge (Flutter Colors.green / orange / red) -->
+    <color name="stock_in">#4CAF50</color>
+    <color name="stock_low">#FF9800</color>
+    <color name="stock_out">#F44336</color>
+</resources>

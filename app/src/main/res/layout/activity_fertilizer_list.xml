@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="4dp">
+
+        <!-- Balances the login button so the slogan stays centred -->
+        <Space
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+        <!-- App bar: rotating slogan, wraps to two lines instead of truncating -->
+        <TextSwitcher
+            android:id="@+id/slogan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inAnimation="@anim/slogan_in"
+            android:minHeight="?attr/actionBarSize"
+            android:outAnimation="@anim/slogan_out"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lines="2"
+                android:textColor="@color/on_surface"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lines="2"
+                android:textColor="@color/on_surface"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TextSwitcher>
+
+        <ImageButton
+            android:id="@+id/login_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/login"
+            android:src="@drawable/ic_account"
+            app:tint="@color/on_surface" />
+    </LinearLayout>
+
+    <!-- Weather card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_weather"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/clock_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/clock_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_70"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/clock_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_70"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/rain_probability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/sky_animation"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fertilizer_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingHorizontal="8dp"
+            android:paddingBottom="16dp" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/empty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/empty_fertilizers"
+            android:textAppearance="?attr/textAppearanceBodyLarge"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/error_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/error_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/retry_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/retry" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

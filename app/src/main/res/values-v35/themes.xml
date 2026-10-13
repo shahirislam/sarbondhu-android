@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- targetSdk 35 forces edge-to-edge on Android 15; opt out so bars don't overlap content. -->
+    <style name="Theme.SarBondhu" parent="Base.Theme.SarBondhu">
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+</resources>
